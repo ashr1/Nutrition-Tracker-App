@@ -1,0 +1,49 @@
+/*
+make the input elment block, so the two underneath-floated-uls don't wander
+into the input bars entire line
+*/
+.input-bar {
+	display: block;
+}
+
+/*
+side by side ul elements which are the results and user lists
+*/
+.list-view-container {
+	width: 45%;
+	float: left;
+}
+
+/*
+styling for the list elements (the food items)
+*/
+li.food-item {
+	background: #4da6ff;
+	border: 2px solid #00264d; 
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*
+make the calories and quantity of a food in the user list stand out
+because it can change if another quantity of the same food
+is added
+-> this description applies to the following two rules:
+*/
+.user .food-item-numCal {
+	background: #f200be; 
+}
+
+.user .food-item-qty {
+	background: #f200be; 
+}
+
+/*
+make the total calories of the user list centered so it
+doesn't dash with the results list items or
+get lost with the user list items
+*/
+.user-calories {
+	text-align: center;
+}
